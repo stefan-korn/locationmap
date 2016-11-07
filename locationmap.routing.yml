@@ -1,0 +1,7 @@
+locationmap.content:
+  path: '/locationmap'
+  defaults:
+    _controller: '\Drupal\locationmap\Controller\LocationMapController::content'
+    _title: 'Location Map rocks'
+  requirements:
+    _permission: 'access content'
