@@ -1,0 +1,6 @@
+name: Locationmap Module
+description: Providing a simple google map for your location
+package: Locationmap
+
+type: module
+core: 8.x
