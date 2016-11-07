@@ -1,0 +1,6 @@
+{
+    "name": "drupal/locationmap",
+    "description": "Providing a simple google map for your location with this module.",
+    "type": "drupal-module",
+    "license": "GPL-2.0+"
+}
