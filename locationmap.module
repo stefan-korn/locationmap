@@ -1,0 +1,14 @@
+<?php
+
+function locationmap_library_info_alter(&$libraries, $extension)
+{
+if($extension == 'locationmap')
+{
+  $default_config = Drupal::configFactory()->getEditable('locationmap.settings');  
+  $newkey = str_replace('YOURKEY', $default_config->get('locationmap.mapsapikey'), key($libraries['google.mapsapi']['js']));
+  $libraries['google.mapsapi']['js'][$newkey] = $libraries['google.mapsapi']['js'][key($libraries['google.mapsapi']['js'])];
+  unset($libraries['google.mapsapi']['js'][key($libraries['google.mapsapi']['js'])]);
+  kint($libraries);
+}
+
+}

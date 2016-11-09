@@ -12,7 +12,10 @@ class LocationMapController extends ControllerBase {
   public function content() {
     return array(
         '#type' => 'markup',
-        '#markup' => $this->t('Location Map'),
+        '#markup' => '<h2>Location Map</h2><div id="locationmap"></div>',
+        '#attached' => array (
+          'library' => array ('locationmap/locationmap', 'locationmap/google.mapsapi')
+        ),
     );
   }
 }

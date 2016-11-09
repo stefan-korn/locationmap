@@ -1,0 +1,10 @@
+locationmap:
+  version: 1.x
+  js:
+    js/locationmap.js: {}
+  css:
+    theme:
+      css/locationmap.css: {}
+google.mapsapi:
+  js:
+    https://maps.googleapis.com/maps/api/js?key=YOURKEY&callback=initMap: { type:external, attributes: { defer:true, async:true } }
