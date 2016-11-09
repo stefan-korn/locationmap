@@ -1,0 +1,4 @@
+locationmap administer_locationmap:
+  title: 'Administer Location Map'
+  description: 'Administration of the Locationmap Module'
+  restrict access: false

@@ -5,3 +5,10 @@ locationmap.content:
     _title: 'Location Map rocks'
   requirements:
     _permission: 'access content'
+locationmap.configuration:
+  path: 'admin/locationmap/config'
+  defaults:
+    _form:  '\Drupal\locationmap\Form\LocationMapConfig'
+    _title: 'Configure Location Map'
+  requirements:
+    _permission: 'locationmap administer_locationmap'
